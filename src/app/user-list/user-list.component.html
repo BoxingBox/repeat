@@ -1,0 +1,12 @@
+
+<h3>All user</h3>
+<!-- <ul>
+    <li *ngFor="let userName of unames">{{ userName }}</li>
+</ul> -->
+
+<!-- <div *ngFor="let userName of unames">
+<app-user [uname]="userName"></app-user>
+</div> -->
+
+<app-user [uname]="userName" *ngFor="let userName of unames"></app-user>
+{{unames | json}}
